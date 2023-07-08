@@ -1,0 +1,137 @@
+/* Conteneur principal */
+.todo-list {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f5fc;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* En-tête de la liste */
+  .todo-list h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Formulaire */
+  .todo-list form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .todo-list form input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    border: none;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .todo-list form input[type="text"]:focus {
+    outline: none;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .todo-list form button {
+    font-size: 14px;
+    color: #fff;
+    padding: 8px 12px;
+    border: none;
+    background-color: #007bff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    animation: fadeIn 0.3s ease;
+  }
+  
+  .todo-list form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .todo-list form button:focus {
+    outline: none;
+  }
+  
+  .todo-list form button:active {
+    transform: translateY(1px);
+  }
+  
+  /* Styles pour les tâches */
+  .todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    animation: slideIn 0.3s ease;
+  }
+  
+  /* Style pour les tâches terminées */
+  .todo-item.completed {
+    background-color: #e1ecf9;
+  }
+  
+  /* Style pour le texte de la tâche */
+  .todo-item .task-text {
+    flex: 1;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    cursor: pointer;
+    text-decoration: none;
+    transition: text-decoration 0.3s ease;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .todo-item.completed .task-text {
+    text-decoration: line-through;
+  }
+  
+  /* Style pour le bouton de suppression */
+  .todo-item .action-buttons {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    white-space: nowrap;
+  }
+  
+  .todo-item .action-buttons button {
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    padding: 8px 12px;
+    border: none;
+    background-color: #007bff;
+    border-radius: 15%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    animation: fadeIn 0.3s ease;
+  }
+  
+  .todo-item .action-buttons button:hover {
+    background-color: #0056b3;
+  }
+  
+  .todo-item .action-buttons button:focus {
+    outline: none;
+  }
+  
+  .todo-item .action-buttons button:active {
+    transform: translateY(1px);
+    outline: none;
+  }
+  
